@@ -1,0 +1,6 @@
+=============== Nov 30, 2023 (CAT) ===============
+09:27:26.691512 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:27:26.693528 db@open opening
+09:27:26.695792 version@stat F·[] S·0B[] Sc·[]
+09:27:26.696749 db@janitor F·2 G·0
+09:27:26.696765 db@open done T·3.226623ms
