@@ -1,0 +1,16 @@
+=============== Nov 30, 2023 (CAT) ===============
+09:23:51.641134 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:23:51.643231 db@open opening
+09:23:51.644678 version@stat F·[] S·0B[] Sc·[]
+09:23:51.645789 db@janitor F·2 G·0
+09:23:51.645805 db@open done T·2.564345ms
+=============== Nov 30, 2023 (CAT) ===============
+09:24:39.207117 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:24:39.207404 version@stat F·[] S·0B[] Sc·[]
+09:24:39.207426 db@open opening
+09:24:39.207461 journal@recovery F·1
+09:24:39.209008 journal@recovery recovering @1
+09:24:39.210514 memdb@flush created L0@2 N·1 S·123B "version,v1":"version,v1"
+09:24:39.210714 version@stat F·[1] S·123B[123B] Sc·[0.25]
+09:24:39.213878 db@janitor F·3 G·0
+09:24:39.213895 db@open done T·6.463552ms
