@@ -1,0 +1,17 @@
+Start node 2
+
+geth --datadir data --port 30307 --bootnodes enode://1c7708c90c37a482fae1747003b1ed60ad0030f23f417532be6503680ff58c252578044f0a7c169aa5f54e38583186b378d8c6c616b43ae51cc48b638e977aa2@127.0.0.1:0?discport=30301 --networkid 12345 --unlock 0x1c7578Fc0E616F4BeED99C54Cc1D90891a464711 --password password.txt  --authrpc.port 8553
+
+Start node 1
+
+ geth --datadir data  --port 30306 --bootnodes enode://1c7708c90c37a482fae1747003b1ed60ad0030f23f417532be6503680ff58c252578044f0a7c169aa5f54e38583186b378d8c6c616b43ae51cc48b638e977aa2@127.0.0.1:0?discport=30301   --authrpc.port 8552 --allow-insecure-unlock  --http --http.corsdomain="https://remix.ethereum.org" --http.api web3,eth,debug,personal,net --networkid 12345 --unlock 0xfd249C821f5Fe01Ef8630Cf9AAd816f5C6cBc688  --password  password.txt --mine --miner.etherbase 0xfd249C821f5Fe01Ef8630Cf9AAd816f5C6cBc688
+
+ Start bootnodes
+
+ bootnode -nodekey boot.key -verbosity 7 -addr 127.0.0.1:30301
+
+
+ Attach Console
+
+
+ geth attach ipc:node2/data/geth.ipc
